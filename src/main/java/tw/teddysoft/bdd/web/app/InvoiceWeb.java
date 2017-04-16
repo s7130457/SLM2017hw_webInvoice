@@ -4,6 +4,8 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
 import tw.teddysoft.bdd.domain.invoice.InvoiceBuilder;
+import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompany;
+import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompanyBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -58,50 +60,39 @@ public final class InvoiceWeb {
 
 
 
-//        get("/VatidAndCompany", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            model.put("Title", "統編與公司名稱");
-//
-//            return new ModelAndView(model, "invoice_input.vm"); // located in the resources directory
-//        }, new VelocityTemplateEngine());
-//
-//
-//        post("/VatidAndCompany", (request, response) -> {
-//            VatidAndCompany vatidAndCompany = null;
-//            String vatid = request.queryMap("vatid").value();
-//            String company = request.queryMap("company").value();
-////            companyNameService(vatid);
-//            if(isUseVatidToFindCompany(vatid)) {
-//                vatidAndCompany.withVatID(vatid);
-//            }
-//            else {
-////                vatidAndCompany.
-//            }
-//
-////            if (isUseTaxIncludedPriceToCalculateInvoice(taxIncludedPrice)) {
-////                vatidAndCompany = InvoiceBuilder.newInstance().
-////                        withTaxIncludedPrice(taxIncludedPrice).
-////                        withVatRate(vatRate).
-////                        issue();
-////            }
-////            else {
-////                vatidAndCompany = InvoiceBuilder.newInstance().
-////                        withTaxExcludedPrice(taxExcludedPrice).
-////                        withVatRate(vatRate).
-////                        issue();
-////            }
-//
-//            Map<String, Object> model = new HashMap<>();
-//            model.put("VatidAndCompany", vatidAndCompany);
-//
-//            return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
-//        }, new VelocityTemplateEngine());
+        get("/invoice", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("Title", "三聯式發票");
+
+            return new ModelAndView(model, "invoice_input.vm"); // located in the resources directory
+        }, new VelocityTemplateEngine());
+
+
+        post("/invoice", (request, response) -> {
+            VatidAndCompany vatidAndCompany;
+            String vatid = request.queryMap("vatid").value();
+            String company = request.queryMap("company").value();
+            if(isUseVatidToFindCompany(vatid)) {
+                vatidAndCompany = VatidAndCompanyBuilder.newInstance().
+                        withVatID(vatid).withCompany(company).search();
+            }
+            else {
+                vatidAndCompany = VatidAndCompanyBuilder.newInstance().
+                        withVatID(vatid).withCompany(company).search();
+            }
+
+            Map<String, Object> model = new HashMap<>();
+
+            model.put("invoice", vatidAndCompany);
+
+            return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
+        }, new VelocityTemplateEngine());
     }
 
 
-//    private static boolean isUseVatidToFindCompany(String vatid) {
-//        return true;
-//    }
+    private static boolean isUseVatidToFindCompany(String vatid) {
+        return !( "" == vatid);
+    }
 
     private static boolean isUseTaxIncludedPriceToCalculateInvoice(int taxIncludedPrice){
         return !(0 == taxIncludedPrice);
