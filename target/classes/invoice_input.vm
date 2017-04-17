@@ -33,9 +33,11 @@
   <input name="issue" type="submit" value="開發票">
 </form>
 
+<br><br>
+
 <h1>統編與公司名稱</h1>
 
-<form method="post">
+<form action="/search" method="post">
 <table>
 <tr>
 <td>統編</td>
@@ -47,7 +49,7 @@
 </tr>
 </table>
 
-  <input name="search" type="submit" value="查詢" onkeypress="companyNameService()">
+  <input name="search" type="submit" value="查詢" >
 </form>
 
 <p>

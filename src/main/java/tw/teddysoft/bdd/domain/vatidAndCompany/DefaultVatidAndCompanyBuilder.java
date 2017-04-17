@@ -27,11 +27,15 @@ public class DefaultVatidAndCompanyBuilder implements VatidAndCompanyBuilder{
 
     @Override
     public VatidAndCompany search() {
-        if(company=="")
-            return new VatidAndCompany(vatid,
-                VatidAndCompanySearch.getCompany(vatid));
-        else
-            return new VatidAndCompany(VatidAndCompanySearch.getVatid(company)
-                        ,company);
+        if(isUseCompanyToFindVatid()) {
+            vatid = VatidAndCompanySearch.getVatid(company);
+        }
+        return new VatidAndCompany(vatid, VatidAndCompanySearch.getCompany(vatid));
+    }
+
+    private boolean isUseCompanyToFindVatid() {
+        if (vatid == "")
+            return true;
+        return false;
     }
 }

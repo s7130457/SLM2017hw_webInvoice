@@ -1,5 +1,7 @@
 package tw.teddysoft.bdd.web.app;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
@@ -22,6 +24,8 @@ import static spark.Spark.post;
  * VelocityTemplateRoute example.
  */
 public final class InvoiceWeb {
+
+    Logger logger = LoggerFactory.getLogger(Invoice.class);
 
     public static void main(String[] args) {
 
@@ -60,38 +64,41 @@ public final class InvoiceWeb {
 
 
 
-        get("/invoice", (request, response) -> {
+        get("/search", (request, response) -> {
+
             Map<String, Object> model = new HashMap<>();
-            model.put("Title", "三聯式發票");
+
+            model.put("Title", "統編與公司名稱");
 
             return new ModelAndView(model, "invoice_input.vm"); // located in the resources directory
         }, new VelocityTemplateEngine());
 
 
-        post("/invoice", (request, response) -> {
+        post("/search", (request, response) -> {
             VatidAndCompany vatidAndCompany;
             String vatid = request.queryMap("vatid").value();
             String company = request.queryMap("company").value();
             if(isUseVatidToFindCompany(vatid)) {
                 vatidAndCompany = VatidAndCompanyBuilder.newInstance().
-                        withVatID(vatid).withCompany(company).search();
+                        withVatID(vatid).search();
             }
             else {
                 vatidAndCompany = VatidAndCompanyBuilder.newInstance().
-                        withVatID(vatid).withCompany(company).search();
+                        withCompany(company).search();
             }
-
             Map<String, Object> model = new HashMap<>();
-
-            model.put("invoice", vatidAndCompany);
-
+            model.put("vatidAndCompany", vatidAndCompany);
             return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
         }, new VelocityTemplateEngine());
+
     }
 
 
     private static boolean isUseVatidToFindCompany(String vatid) {
-        return !( "" == vatid);
+        if ((null == vatid) || ("".equals(vatid))) { //use Company name find Vatid
+            return  false;
+        }
+        return true;
     }
 
     private static boolean isUseTaxIncludedPriceToCalculateInvoice(int taxIncludedPrice){
@@ -104,7 +111,5 @@ public final class InvoiceWeb {
         else
            return Integer.valueOf(str);
     }
-
-
 
 }

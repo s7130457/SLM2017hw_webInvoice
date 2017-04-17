@@ -35,8 +35,8 @@
 <td>公司名稱</td>
 </tr>
 <tr>
-<td><input name="vatid" type="text" value="$invoice.getVatid()" readonly></td>
-<td><input name="company" type="text" value="$invoice.getCompanyName()" readonly></td>
+<td><input name="vatid" type="text" value="$vatidAndCompany.getVatid()" readonly></td>
+<td><input name="company" type="text" value="$vatidAndCompany.getCompany()" readonly></td>
 </tr>
 </table>
 <form>

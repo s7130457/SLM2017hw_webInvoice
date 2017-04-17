@@ -16,7 +16,11 @@ public class Utility {
         Properties prop = Utility.loadProperties(Utility.CUCUMBER_PROPERTY_FILE);
         if("web".equals(prop.getProperty("invoice.ui"))) {
             return true;
-        } else {
+        }
+        else if("web".equals(prop.getProperty("VatidAndCompany.ui"))) {
+            return true;
+        }
+        else {
             return false;
         }
     }

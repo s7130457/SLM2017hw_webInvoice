@@ -26,6 +26,8 @@
   <input name="reissue" type="submit" value="重開發票">
 </form>
 
+<br><br>
+
 <h1>統編與公司名稱</h1>
 <table>
 <tr>
@@ -33,8 +35,8 @@
 <td>公司名稱</td>
 </tr>
 <tr>
-<td><input name="vatid" type="text" value="$VatidAndCompany.getVatid()" readonly></td>
-<td><input name="company" type="text" value="$VatidAndCompany.getCompanyName()" readonly></td>
+<td><input name="vatid" type="text" value="$vatidAndCompany.getVatid()" readonly></td>
+<td><input name="company" type="text" value="$vatidAndCompany.getCompany()" readonly></td>
 </tr>
 </table>
 <form>

@@ -13,7 +13,8 @@ public class VatidAndCompany {
     }
 
     public String getVatid() {
-        return vatid; }
+        return vatid;
+    }
 
     public String getCompany() {
         return this.company;

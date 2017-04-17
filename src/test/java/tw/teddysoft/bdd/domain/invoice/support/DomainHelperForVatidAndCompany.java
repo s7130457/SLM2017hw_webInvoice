@@ -7,6 +7,7 @@ import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompanyBuilder;
  * Created by jeni on 2017/4/16.
  */
 public class DomainHelperForVatidAndCompany {
+
     VatidAndCompanyBuilder builder;
     VatidAndCompany vatidAndCompany;
 
@@ -14,7 +15,9 @@ public class DomainHelperForVatidAndCompany {
         this.builder = builder;
     }
 
-    public VatidAndCompanyBuilder getVatidAndCompanyBuilder() {return builder; }
+    public VatidAndCompanyBuilder getVatidAndCompanyBuilder() {
+        return builder;
+    }
 
     public void setVatidAndCompany(VatidAndCompany vatidAndCompanyName) {
         vatidAndCompany = vatidAndCompanyName;
