@@ -12,6 +12,8 @@ public class Hook {
     public void beforeScenario(Scenario scenario){
         if (Utility.isUnderInvoiceWebMode())
             InvoiceWeb.main(new String [0]);
+        if (Utility.isUnderVatidAndCompanyWebMode())
+            InvoiceWeb.main(new String [0]);
     }
 
     @After

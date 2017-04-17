@@ -5,11 +5,13 @@ package tw.teddysoft.bdd.domain.vatidAndCompany;
  */
 public interface VatidAndCompanyBuilder {
 
-   public static VatidAndCompanyBuilder newInstance() { return new DefaultVatidAndCompanyBuilder(); }
+   public static VatidAndCompanyBuilder newInstance() {
+      return new DefaultVatidAndCompanyBuilder();
+   }
 
    public VatidAndCompanyBuilder withVatID(String vatid);
 
-   public VatidAndCompanyBuilder withCompany(String vatid);
+   public VatidAndCompanyBuilder withCompany(String company);
 
    public VatidAndCompany search();
 

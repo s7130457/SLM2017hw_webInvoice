@@ -1,7 +1,5 @@
 package tw.teddysoft.bdd.web.app;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
@@ -24,8 +22,6 @@ import static spark.Spark.post;
  * VelocityTemplateRoute example.
  */
 public final class InvoiceWeb {
-
-    Logger logger = LoggerFactory.getLogger(Invoice.class);
 
     public static void main(String[] args) {
 

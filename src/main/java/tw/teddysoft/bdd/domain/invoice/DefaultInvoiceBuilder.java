@@ -7,7 +7,7 @@ public class DefaultInvoiceBuilder implements InvoiceBuilder {
 
     private double vatRate = 0.0;
     private int taxIncludedPrice = 0;
-    private  int taxExcludedPrice=0;
+    private  int taxExcludedPrice = 0;
 
     public DefaultInvoiceBuilder() {};
 

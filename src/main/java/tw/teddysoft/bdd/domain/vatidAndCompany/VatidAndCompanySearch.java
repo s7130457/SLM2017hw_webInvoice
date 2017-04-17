@@ -30,6 +30,13 @@ public class VatidAndCompanySearch {
             else if(json.getJSONObject("data").has("名稱")) {
                 company = json.getJSONObject("data").getString("名稱");
             }
+            else if(json.getJSONObject("data").has("分公司名稱")) {
+                company = json.getJSONObject("data").getString("分公司名稱");
+            }
+            else if(json.getJSONObject("data").has("商業名稱")) {
+                company = json.getJSONObject("data").getString("商業名稱");
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

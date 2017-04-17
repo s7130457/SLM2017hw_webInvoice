@@ -4,6 +4,7 @@ package tw.teddysoft.bdd.domain.vatidAndCompany;
  * Created by jeni on 2017/4/16.
  */
 public class DefaultVatidAndCompanyBuilder implements VatidAndCompanyBuilder{
+
     private String vatid = "";
     private String company = "";
 
@@ -20,7 +21,7 @@ public class DefaultVatidAndCompanyBuilder implements VatidAndCompanyBuilder{
     }
 
     @Override
-    public VatidAndCompanyBuilder withCompany(String companyName) {
+    public DefaultVatidAndCompanyBuilder withCompany(String companyName) {
         this.company = companyName;
         return this;
     }

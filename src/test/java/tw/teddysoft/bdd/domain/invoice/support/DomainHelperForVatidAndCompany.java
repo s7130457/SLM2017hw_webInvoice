@@ -11,6 +11,8 @@ public class DomainHelperForVatidAndCompany {
     VatidAndCompanyBuilder builder;
     VatidAndCompany vatidAndCompany;
 
+
+
     public DomainHelperForVatidAndCompany(VatidAndCompanyBuilder builder) {
         this.builder = builder;
     }

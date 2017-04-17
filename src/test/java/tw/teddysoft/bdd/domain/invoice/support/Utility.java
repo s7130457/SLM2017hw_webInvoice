@@ -17,7 +17,14 @@ public class Utility {
         if("web".equals(prop.getProperty("invoice.ui"))) {
             return true;
         }
-        else if("web".equals(prop.getProperty("VatidAndCompany.ui"))) {
+        else {
+            return false;
+        }
+    }
+
+    public static boolean isUnderVatidAndCompanyWebMode(){
+        Properties prop = Utility.loadProperties(Utility.CUCUMBER_PROPERTY_FILE);
+        if("webForVatidAndCompany".equals(prop.getProperty("VatidAndCompany.ui"))) {
             return true;
         }
         else {
