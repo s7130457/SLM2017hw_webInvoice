@@ -49,6 +49,20 @@
                     </execution>
                 </executions>
             </plugin>
+                 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>tw.teddysoft.bdd.web.app.InvoiceWeb</mainClass>
+                            <packageName>tw.teddysoft.bdd.web.app</packageName>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
 
         </plugins>
     </build>
