@@ -16,6 +16,9 @@ import java.nio.charset.Charset;
 public class VatidAndCompanySearch {
 
     public static String getCompany(String vatid) {
+        if (vatid == "error" || vatid == "" ){
+            return "請輸入統編";
+        }
         String url = "http://company.g0v.ronny.tw/api/show/" + vatid;
         String company = "";
         JSONObject json = null;
@@ -24,6 +27,12 @@ public class VatidAndCompanySearch {
             BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
             String jsonText = readAll(rd);
             json = new JSONObject(jsonText);
+
+            if( json.has("data") == false ){
+                company = "查無此公司，請輸入正確統編";
+                return company;
+            }
+
             if(json.getJSONObject("data").has("公司名稱")) {
                 company = json.getJSONObject("data").getString("公司名稱");
             }
@@ -36,7 +45,6 @@ public class VatidAndCompanySearch {
             else if(json.getJSONObject("data").has("商業名稱")) {
                 company = json.getJSONObject("data").getString("商業名稱");
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,6 +52,9 @@ public class VatidAndCompanySearch {
     }
 
     public static String getVatid(String company) {
+        if (company == "" || company == "error")
+            return "請輸入公司名稱";
+
         String url = "http://company.g0v.ronny.tw/api/search?q=" + company;
         String vatid = "";
         JSONArray jsonArr = null;
@@ -54,7 +65,14 @@ public class VatidAndCompanySearch {
             String jsonText = readAll(rd);
             jsonOb = new JSONObject(jsonText);
             jsonArr = jsonOb.getJSONArray("data");
+
+            if( jsonArr.isNull(0)){
+                vatid = "查無此統編，請輸入正確公司名稱";
+                return vatid;
+            }
+
             vatid = jsonArr.getJSONObject(0).getString("統一編號");
+
         } catch (IOException e) {
             e.printStackTrace();
         }

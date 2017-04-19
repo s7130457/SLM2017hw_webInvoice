@@ -5,8 +5,8 @@ package tw.teddysoft.bdd.domain.vatidAndCompany;
  */
 public class DefaultVatidAndCompanyBuilder implements VatidAndCompanyBuilder{
 
-    private String vatid = "";
-    private String company = "";
+    private String vatid = "vatid";
+    private String company = "company";
 
     public DefaultVatidAndCompanyBuilder() {};
 
@@ -16,27 +16,40 @@ public class DefaultVatidAndCompanyBuilder implements VatidAndCompanyBuilder{
 
     @Override
     public DefaultVatidAndCompanyBuilder withVatID(String vatID) {
-        this.vatid = vatID;
+        if (vatID.equals(""))
+            this.vatid = "error";
+
+        else
+            this.vatid = vatID;
+
         return this;
     }
 
     @Override
     public DefaultVatidAndCompanyBuilder withCompany(String companyName) {
-        this.company = companyName;
+        if(companyName.equals(""))
+            this.company = "error";
+        else
+            this.company = companyName;
+
         return this;
     }
 
     @Override
     public VatidAndCompany search() {
-        if(isUseCompanyToFindVatid()) {
-            vatid = VatidAndCompanySearch.getVatid(company);
-        }
+
+        if(isUseCompanyToFindVatid() == true)
+            return new VatidAndCompany(VatidAndCompanySearch.getVatid(company), company);
+
         return new VatidAndCompany(vatid, VatidAndCompanySearch.getCompany(vatid));
     }
 
     private boolean isUseCompanyToFindVatid() {
-        if (vatid == "")
+        if((vatid == "vatid") ) {
             return true;
+        }
+
+
         return false;
     }
 }
