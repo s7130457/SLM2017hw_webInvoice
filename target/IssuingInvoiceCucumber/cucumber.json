@@ -1,0 +1,2584 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 444988,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 25239,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 100141128,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94646,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 36000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "36000",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 391505,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2604124,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 1714",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1714",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 142720,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 34286",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34286",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 355148,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 16525,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 112374,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73013,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 17900",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17900",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22234,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87736,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 852",
+            "match": {
+              "arguments": [
+                {
+                  "val": "852",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55586,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 17048",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17048",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 246380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 20732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 65501,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38460,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 17000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17000",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11417,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47473,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 810",
+            "match": {
+              "arguments": [
+                {
+                  "val": "810",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41765,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 16190",
+            "match": {
+              "arguments": [
+                {
+                  "val": "16190",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 404726,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 26441,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 132204,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81126,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 21000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21000",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20732,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85933,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55586,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 20000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20000",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 354849,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 31849,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 116580,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52281,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 99",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17127,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61595,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 71812,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 94",
+            "match": {
+              "arguments": [
+                {
+                  "val": "94",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 364763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 20732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 211226,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125594,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40562,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94946,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76919,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 337422,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 14422,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63098,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37559,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9915,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30948,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34854,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 468424,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 19831,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113575,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82928,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14122,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56787,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77219,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 219039,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Successful issuing invoices using tax included prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 34252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 74516,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47773,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the tax included price provided is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15324,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58290,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58291,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the tax excluded price is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 563370,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 21333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 99754,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95848,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 34286",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34286",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21634,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72111,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 1714",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1714",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70308,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 36000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "36000",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 414040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 19531,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91341,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56487,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 17048",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17048",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13821,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58591,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 852",
+            "match": {
+              "arguments": [
+                {
+                  "val": "852",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42666,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 17900",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17900",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 284239,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 13821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 90140,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62196,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 16190",
+            "match": {
+              "arguments": [
+                {
+                  "val": "16190",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36957,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55586,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 810",
+            "match": {
+              "arguments": [
+                {
+                  "val": "810",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46271,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 17000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17000",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 373177,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 20131,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 74815,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42966,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 20000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20000",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16225,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103059,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 95248,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 21000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21000",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 250888,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 11117,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 143321,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31248,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 94",
+            "match": {
+              "arguments": [
+                {
+                  "val": "94",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10516,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31248,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27643,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 99",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 227151,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 18028,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 74214,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65501,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26441,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104261,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50778,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 43,
+            "value": "#  | 10              | 0     | 10           | 此案例不適用     |"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 964791,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 363562,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 134007,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59793,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18028,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48976,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57088,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 392706,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 37858,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126796,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72713,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16826,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80224,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48675,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 280033,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Successful issuing invoices using tax excluded prices",
+        "description": "",
+        "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 13220,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 61896,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27943,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the tax excluded price provided is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10516,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30047,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29746,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the tax included price is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 205518,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "A special case to issue an invoice by assigning 10$ to tax included prices first and tax excluded prices second",
+        "description": "",
+        "id": "issuing-invoices-for-companies;a-special-case-to-issue-an-invoice-by-assigning-10$-to-tax-included-prices-first-and-tax-excluded-prices-second",
+        "after": [
+          {
+            "result": {
+              "duration": 40562,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20432,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I am on the invoice Web page",
+            "match": {
+              "location": "IssuingInvoiceStep.java:33"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149331,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89539,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the tax included price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33351,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "the tax excluded price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12619,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48074,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I should see the VAT is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43867,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the tax included price is 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31549,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the tax excluded price is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 295958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "A special case to issue an invoice by assigning 10$ to tax excluded prices first and tax included prices second",
+        "description": "",
+        "id": "issuing-invoices-for-companies;a-special-case-to-issue-an-invoice-by-assigning-10$-to-tax-excluded-prices-first-and-tax-included-prices-second",
+        "after": [
+          {
+            "result": {
+              "duration": 14723,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 71210,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Ｔhe VAT rate is 0.05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.05",
+                  "offset": 16
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:18"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47473,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the tax excluded price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:28"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29145,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "the tax included price provided is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:24"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11117,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I issue a company invoice",
+            "match": {
+              "location": "IssuingInvoiceStep.java:36"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29145,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I should see the VAT is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:40"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 131303,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "the tax included price is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:48"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55886,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the tax excluded price is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                }
+              ],
+              "location": "IssuingInvoiceStep.java:44"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Issuing invoices for companies",
+    "description": "In order to avoid errors\r\nAs a Teddysoft employee\r\nI want to brainlessly issue an company invoice with tax included price",
+    "id": "issuing-invoices-for-companies",
+    "keyword": "Feature",
+    "uri": "src/test/features/issuing_company_invoice.feature"
+  }
+]
