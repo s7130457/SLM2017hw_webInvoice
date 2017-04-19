@@ -11,10 +11,6 @@ Feature: Entering VAT ID and the company name
     When  I enter the company name "泰迪軟體科技有限公司"
     Then  I should see the VAT ID "53909614"
 
-  Scenario: Entering VAT ID is null gets the corresponding company name is "請輸入統編"
-    When  I enter the VAT ID ""
-    Then  I should see the company name "請輸入統編"
-
   Scenario Outline: 用統一編號找公司名稱
     When I enter the VAT ID "<vat_id>"
     Then I should see the company name "<company_name>"

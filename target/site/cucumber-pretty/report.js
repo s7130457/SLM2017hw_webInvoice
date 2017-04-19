@@ -1,2563 +1,1001 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/features/issuing_company_invoice.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/features/entering_vatid_and_company_name.feature");
 formatter.feature({
   "line": 1,
-  "name": "Issuing invoices for companies",
-  "description": "In order to avoid errors\r\nAs a Teddysoft employee\r\nI want to brainlessly issue an company invoice with tax included price",
-  "id": "issuing-invoices-for-companies",
+  "name": "Entering VAT ID and the company name",
+  "description": "In order to avoid errors\r\nAs a Teddysoft employee\r\nI want to make sure the VAT ID and company name are consistency",
+  "id": "entering-vat-id-and-the-company-name",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 7,
-  "name": "Successful issuing invoices using tax included prices",
+formatter.before({
+  "duration": 463917,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "Entering VAT ID gets the corresponding company name",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices",
+  "id": "entering-vat-id-and-the-company-name;entering-vat-id-gets-the-corresponding-company-name",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 7,
+  "name": "I enter the VAT ID \"53909614\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "I should see the company name \"泰迪軟體科技有限公司\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "53909614",
+      "offset": 20
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:19"
+});
+formatter.result({
+  "duration": 201040929,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "泰迪軟體科技有限公司",
+      "offset": 31
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:24"
+});
+formatter.result({
+  "duration": 5606362,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 25840,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 375880,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Entering company name gets the corresponding VAT ID",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;entering-company-name-gets-the-corresponding-vat-id",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 11,
+  "name": "I enter the company name \"泰迪軟體科技有限公司\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "I should see the VAT ID \"53909614\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "泰迪軟體科技有限公司",
+      "offset": 26
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:28"
+});
+formatter.result({
+  "duration": 133265208,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "53909614",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 178776,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 48675,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 14,
+  "name": "用統一編號找公司名稱",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is \u003ctax_included\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
+  "line": 15,
+  "name": "I enter the VAT ID \"\u003cvat_id\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is \u003cVAT\u003e",
+  "line": 16,
+  "name": "I should see the company name \"\u003ccompany_name\u003e\"",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is \u003ctax_excluded\u003e",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 13,
+  "line": 17,
   "name": "",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;",
   "rows": [
+    {
+      "cells": [
+        "vat_id",
+        "company_name",
+        "notes"
+      ],
+      "line": 18,
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;1"
+    },
+    {
+      "cells": [
+        "11111111",
+        "東發視聽社",
+        "商業名稱"
+      ],
+      "line": 19,
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;2"
+    },
+    {
+      "cells": [
+        "56605473",
+        "資展百貨有限公司",
+        "公司名稱"
+      ],
+      "line": 20,
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;3"
+    },
+    {
+      "cells": [
+        "24628967",
+        "台北分公司",
+        "分公司名稱  (大馨旅行社有限公司台北分公司)"
+      ],
+      "line": 21,
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;4"
+    },
+    {
+      "cells": [
+        "92021164",
+        "國立臺北科技大學",
+        "名稱"
+      ],
+      "line": 22,
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;5"
+    },
     {
       "comments": [
         {
-          "line": 14,
-          "value": "# VAT \u003d Value Added Tax"
+          "line": 23,
+          "value": "#      |            |      請輸入統編                 |                  統編為空                   |"
         }
       ],
       "cells": [
-        "tax_included",
-        "VAT",
-        "tax_excluded",
-        "notes"
-      ],
-      "line": 15,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;1"
-    },
-    {
-      "cells": [
-        "36000",
-        "1714",
-        "34286",
-        "Refactoring定價"
-      ],
-      "line": 16,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;2"
-    },
-    {
-      "cells": [
-        "17900",
-        "852",
-        "17048",
-        "Scrum早鳥"
-      ],
-      "line": 17,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;3"
-    },
-    {
-      "cells": [
-        "17000",
-        "810",
-        "16190",
-        "Scrum泰迪之友"
-      ],
-      "line": 18,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;4"
-    },
-    {
-      "cells": [
-        "21000",
-        "1000",
-        "20000",
-        "Scrum定價"
-      ],
-      "line": 19,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;5"
-    },
-    {
-      "cells": [
-        "99",
-        "5",
-        "94",
-        "四捨五入案例"
-      ],
-      "line": 20,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;6"
-    },
-    {
-      "cells": [
-        "1",
-        "0",
-        "1",
-        "邊界條件"
-      ],
-      "line": 21,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;7"
-    },
-    {
-      "cells": [
-        "10",
-        "0",
-        "10",
-        "邊界條件"
-      ],
-      "line": 22,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;8"
-    },
-    {
-      "cells": [
-        "11",
-        "1",
-        "10",
-        "邊界條件"
-      ],
-      "line": 23,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;9"
-    },
-    {
-      "cells": [
-        "0",
-        "0",
-        "0",
-        "可以開零元發票"
+        "12584651",
+        "查無此公司，請輸入正確統編",
+        "錯誤統編"
       ],
       "line": 24,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;10"
+      "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;6"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 403223,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "Successful issuing invoices using tax included prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 36000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 1714",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 34286",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 117117057,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "36000",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 190495,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 414641,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1714",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 3120321,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "34286",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 69407,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 17427,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 245479,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Successful issuing invoices using tax included prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 17900",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 852",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 17048",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 60694,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17900",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 51079,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 24938,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "852",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 53182,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17048",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 50779,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 19229,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 301967,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 18,
-  "name": "Successful issuing invoices using tax included prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 17000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 810",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 16190",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 95248,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17000",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 59192,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 51079,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "810",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 114477,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "16190",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 71510,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 22535,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 287844,
+  "duration": 810953,
   "status": "passed"
 });
 formatter.scenario({
   "line": 19,
-  "name": "Successful issuing invoices using tax included prices",
+  "name": "用統一編號找公司名稱",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;5",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 21000",
+  "line": 15,
+  "name": "I enter the VAT ID \"11111111\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 1000",
+  "line": 16,
+  "name": "I should see the company name \"東發視聽社\"",
   "matchedColumns": [
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 20000",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
+      "val": "11111111",
+      "offset": 20
     }
   ],
-  "location": "IssuingInvoiceStep.java:18"
+  "location": "VatidAndCompanyStep.java:19"
 });
 formatter.result({
-  "duration": 83229,
+  "duration": 86372054,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "21000",
-      "offset": 35
+      "val": "東發視聽社",
+      "offset": 31
     }
   ],
-  "location": "IssuingInvoiceStep.java:24"
+  "location": "VatidAndCompanyStep.java:24"
 });
 formatter.result({
-  "duration": 56488,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 16225,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1000",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 76619,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "20000",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 67905,
+  "duration": 134007,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19531,
+  "duration": 64599,
   "status": "passed"
 });
 formatter.before({
-  "duration": 361459,
+  "duration": 652608,
   "status": "passed"
 });
 formatter.scenario({
   "line": 20,
-  "name": "Successful issuing invoices using tax included prices",
+  "name": "用統一編號找公司名稱",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;6",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 99",
+  "line": 15,
+  "name": "I enter the VAT ID \"56605473\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 5",
+  "line": 16,
+  "name": "I should see the company name \"資展百貨有限公司\"",
   "matchedColumns": [
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 94",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
+      "val": "56605473",
+      "offset": 20
     }
   ],
-  "location": "IssuingInvoiceStep.java:18"
+  "location": "VatidAndCompanyStep.java:19"
 });
 formatter.result({
-  "duration": 70609,
+  "duration": 1122458711,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "99",
-      "offset": 35
+      "val": "資展百貨有限公司",
+      "offset": 31
     }
   ],
-  "location": "IssuingInvoiceStep.java:24"
+  "location": "VatidAndCompanyStep.java:24"
 });
 formatter.result({
-  "duration": 46272,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 14422,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 85032,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "94",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 76618,
+  "duration": 104562,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26741,
+  "duration": 44168,
   "status": "passed"
 });
 formatter.before({
-  "duration": 282136,
+  "duration": 572385,
   "status": "passed"
 });
 formatter.scenario({
   "line": 21,
-  "name": "Successful issuing invoices using tax included prices",
+  "name": "用統一編號找公司名稱",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;7",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;4",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 1",
+  "line": 15,
+  "name": "I enter the VAT ID \"24628967\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 0",
+  "line": 16,
+  "name": "I should see the company name \"台北分公司\"",
   "matchedColumns": [
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 1",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
+      "val": "24628967",
+      "offset": 20
     }
   ],
-  "location": "IssuingInvoiceStep.java:18"
+  "location": "VatidAndCompanyStep.java:19"
 });
 formatter.result({
-  "duration": 98552,
+  "duration": 91726627,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1",
-      "offset": 35
+      "val": "台北分公司",
+      "offset": 31
     }
   ],
-  "location": "IssuingInvoiceStep.java:24"
+  "location": "VatidAndCompanyStep.java:24"
 });
 formatter.result({
-  "duration": 67304,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 14723,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 62797,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 54084,
+  "duration": 140617,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20131,
+  "duration": 52882,
   "status": "passed"
 });
 formatter.before({
-  "duration": 341628,
+  "duration": 763780,
   "status": "passed"
 });
 formatter.scenario({
   "line": 22,
-  "name": "Successful issuing invoices using tax included prices",
+  "name": "用統一編號找公司名稱",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;8",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;5",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 10",
+  "line": 15,
+  "name": "I enter the VAT ID \"92021164\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 0",
+  "line": 16,
+  "name": "I should see the company name \"國立臺北科技大學\"",
   "matchedColumns": [
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 10",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
+      "val": "92021164",
+      "offset": 20
     }
   ],
-  "location": "IssuingInvoiceStep.java:18"
+  "location": "VatidAndCompanyStep.java:19"
 });
 formatter.result({
-  "duration": 133106,
+  "duration": 85275058,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 35
+      "val": "國立臺北科技大學",
+      "offset": 31
     }
   ],
-  "location": "IssuingInvoiceStep.java:24"
+  "location": "VatidAndCompanyStep.java:24"
 });
 formatter.result({
-  "duration": 67905,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 19530,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 45370,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 42966,
+  "duration": 149030,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21934,
+  "duration": 51380,
   "status": "passed"
 });
 formatter.before({
-  "duration": 353346,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "Successful issuing invoices using tax included prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;9",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 11",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 1",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 10",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 131003,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "11",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 91942,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 17126,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 71811,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 65501,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 19530,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 380387,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Successful issuing invoices using tax included prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-included-prices;;10",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "the tax included price provided is 0",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I should see the VAT is 0",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "the tax excluded price is 0",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 104261,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 44769,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 13821,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 72713,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:44"
-});
-formatter.result({
-  "duration": 36056,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 27943,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 28,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is \u003ctax_excluded\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is \u003cVAT\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is \u003ctax_included\u003e",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 34,
-  "name": "",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;",
-  "rows": [
-    {
-      "comments": [
-        {
-          "line": 35,
-          "value": "# VAT \u003d Value Added Tax"
-        }
-      ],
-      "cells": [
-        "tax_included",
-        "VAT",
-        "tax_excluded",
-        "notes"
-      ],
-      "line": 36,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;1"
-    },
-    {
-      "cells": [
-        "36000",
-        "1714",
-        "34286",
-        "Refactoring定價"
-      ],
-      "line": 37,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;2"
-    },
-    {
-      "cells": [
-        "17900",
-        "852",
-        "17048",
-        "Scrum早鳥"
-      ],
-      "line": 38,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;3"
-    },
-    {
-      "cells": [
-        "17000",
-        "810",
-        "16190",
-        "Scrum泰迪之友"
-      ],
-      "line": 39,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;4"
-    },
-    {
-      "cells": [
-        "21000",
-        "1000",
-        "20000",
-        "Scrum定價"
-      ],
-      "line": 40,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;5"
-    },
-    {
-      "cells": [
-        "99",
-        "5",
-        "94",
-        "四捨五入案例"
-      ],
-      "line": 41,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;6"
-    },
-    {
-      "cells": [
-        "1",
-        "0",
-        "1",
-        "邊界條件"
-      ],
-      "line": 42,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;7"
-    },
-    {
-      "comments": [
-        {
-          "line": 43,
-          "value": "#  | 10              | 0     | 10           | 此案例不適用     |"
-        }
-      ],
-      "cells": [
-        "11",
-        "1",
-        "10",
-        "邊界條件"
-      ],
-      "line": 44,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;8"
-    },
-    {
-      "cells": [
-        "12",
-        "1",
-        "11",
-        "邊界條件"
-      ],
-      "line": 45,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;9"
-    },
-    {
-      "cells": [
-        "0",
-        "0",
-        "0",
-        "可以開零元發票"
-      ],
-      "line": 46,
-      "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;10"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 264108,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 37,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 34286",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 1714",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 36000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 110271,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "34286",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 126495,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 22535,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1714",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 79022,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "36000",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 66103,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16826,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 282737,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 38,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 17048",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 852",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 17900",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 65201,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17048",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 37858,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 10516,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "852",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 39361,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17900",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 32450,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13521,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 227451,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 39,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 16190",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 810",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 17000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 61596,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "16190",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 90740,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 13220,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "810",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 57689,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "17000",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 70910,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 55886,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 292352,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 40,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 20000",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 1000",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 21000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 84130,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "20000",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 46572,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 13521,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1000",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 68506,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "21000",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 45069,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13821,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 224146,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 41,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 94",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 5",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 99",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 53482,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "94",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 46873,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 28845,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 108467,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "99",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 66402,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15023,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 219339,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 42,
-  "name": "Successful issuing invoices using tax excluded prices",
-  "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;7",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 1",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 0",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 1",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 71811,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 32150,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 9615,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 26140,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 27943,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12920,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 493662,
+  "duration": 541136,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 43,
-      "value": "#  | 10              | 0     | 10           | 此案例不適用     |"
+      "line": 23,
+      "value": "#      |            |      請輸入統編                 |                  統編為空                   |"
     }
   ],
-  "line": 44,
-  "name": "Successful issuing invoices using tax excluded prices",
+  "line": 24,
+  "name": "用統一編號找公司名稱",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;8",
+  "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;6",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 10",
+  "line": 15,
+  "name": "I enter the VAT ID \"12584651\"",
   "matchedColumns": [
-    2
+    0
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
   "keyword": "When "
 });
 formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 1",
+  "line": 16,
+  "name": "I should see the company name \"查無此公司，請輸入正確統編\"",
   "matchedColumns": [
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 33,
-  "name": "the tax included price is 11",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
+      "val": "12584651",
+      "offset": 20
     }
   ],
-  "location": "IssuingInvoiceStep.java:18"
+  "location": "VatidAndCompanyStep.java:19"
 });
 formatter.result({
-  "duration": 50779,
+  "duration": 80999753,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 35
+      "val": "查無此公司，請輸入正確統編",
+      "offset": 31
     }
   ],
-  "location": "IssuingInvoiceStep.java:28"
+  "location": "VatidAndCompanyStep.java:24"
 });
 formatter.result({
-  "duration": 41764,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 12018,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 33952,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "11",
-      "offset": 26
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:48"
-});
-formatter.result({
-  "duration": 69408,
+  "duration": 142120,
   "status": "passed"
 });
 formatter.after({
-  "duration": 256897,
+  "duration": 34253,
   "status": "passed"
 });
+formatter.scenarioOutline({
+  "line": 27,
+  "name": "用公司名稱找統一編號",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 28,
+  "name": "I enter the company name \"\u003ccompany_name\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 29,
+  "name": "I should see the VAT ID \"\u003cvat_id\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 30,
+  "name": "",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;",
+  "rows": [
+    {
+      "cells": [
+        "vat_id",
+        "company_name",
+        "notes"
+      ],
+      "line": 31,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;1"
+    },
+    {
+      "cells": [
+        "09430924",
+        "東發視聽社",
+        "商業名稱"
+      ],
+      "line": 32,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;2"
+    },
+    {
+      "cells": [
+        "04374276",
+        "鴻海當舖",
+        "商業名稱"
+      ],
+      "line": 33,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;3"
+    },
+    {
+      "cells": [
+        "56605473",
+        "資展百貨有限公司",
+        "公司名稱"
+      ],
+      "line": 34,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;4"
+    },
+    {
+      "cells": [
+        "60627506",
+        "千山室內設計有限公司",
+        "公司名稱"
+      ],
+      "line": 35,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;5"
+    },
+    {
+      "cells": [
+        "92021164",
+        "國立臺北科技大學",
+        "名稱"
+      ],
+      "line": 36,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;6"
+    },
+    {
+      "cells": [
+        "請輸入公司名稱",
+        "",
+        "公司為空"
+      ],
+      "line": 37,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;7"
+    },
+    {
+      "cells": [
+        "查無此統編，請輸入正確公司名稱",
+        "測試公司",
+        "錯誤公司"
+      ],
+      "line": 38,
+      "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;8"
+    }
+  ],
+  "keyword": "Examples"
+});
 formatter.before({
-  "duration": 172767,
+  "duration": 855422,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
-  "name": "Successful issuing invoices using tax excluded prices",
+  "line": 32,
+  "name": "用公司名稱找統一編號",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;9",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 11",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 1",
+  "line": 28,
+  "name": "I enter the company name \"東發視聽社\"",
   "matchedColumns": [
     1
   ],
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 33,
-  "name": "the tax included price is 12",
+  "line": 29,
+  "name": "I should see the VAT ID \"09430924\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 54384,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "11",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 86834,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 18929,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 101257,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "12",
+      "val": "東發視聽社",
       "offset": 26
     }
   ],
-  "location": "IssuingInvoiceStep.java:48"
+  "location": "VatidAndCompanyStep.java:28"
 });
 formatter.result({
-  "duration": 38759,
+  "duration": 851914092,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "09430924",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 65502,
   "status": "passed"
 });
 formatter.after({
-  "duration": 36957,
+  "duration": 29445,
   "status": "passed"
 });
 formatter.before({
-  "duration": 259301,
+  "duration": 353947,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 46,
-  "name": "Successful issuing invoices using tax excluded prices",
+  "line": 33,
+  "name": "用公司名稱找統一編號",
   "description": "",
-  "id": "issuing-invoices-for-companies;successful-issuing-invoices-using-tax-excluded-prices;;10",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 29,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "the tax excluded price provided is 0",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I issue a company invoice",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "I should see the VAT is 0",
+  "line": 28,
+  "name": "I enter the company name \"鴻海當舖\"",
   "matchedColumns": [
     1
   ],
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 33,
-  "name": "the tax included price is 0",
+  "line": 29,
+  "name": "I should see the VAT ID \"04374276\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 52882,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 27943,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 8713,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 26741,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
+      "val": "鴻海當舖",
       "offset": 26
     }
   ],
-  "location": "IssuingInvoiceStep.java:48"
+  "location": "VatidAndCompanyStep.java:28"
 });
 formatter.result({
-  "duration": 23136,
+  "duration": 102132906,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "04374276",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 134308,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21333,
+  "duration": 47774,
   "status": "passed"
 });
 formatter.before({
-  "duration": 151434,
+  "duration": 758972,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 49,
-  "name": "A special case to issue an invoice by assigning 10$ to tax included prices first and tax excluded prices second",
+  "line": 34,
+  "name": "用公司名稱找統一編號",
   "description": "",
-  "id": "issuing-invoices-for-companies;a-special-case-to-issue-an-invoice-by-assigning-10$-to-tax-included-prices-first-and-tax-excluded-prices-second",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;4",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 50,
-  "name": "I am on the invoice Web page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 51,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 52,
-  "name": "the tax included price provided is 10",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 53,
-  "name": "the tax excluded price provided is 10",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 54,
-  "name": "I issue a company invoice",
+  "line": 28,
+  "name": "I enter the company name \"資展百貨有限公司\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 55,
-  "name": "I should see the VAT is 1",
+  "line": 29,
+  "name": "I should see the VAT ID \"56605473\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 56,
-  "name": "the tax included price is 11",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 57,
-  "name": "the tax excluded price is 10",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:33"
-});
-formatter.result({
-  "duration": 14121,
-  "status": "passed"
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 57388,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 28845,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 95548,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 14122,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 160749,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "11",
+      "val": "資展百貨有限公司",
       "offset": 26
     }
   ],
-  "location": "IssuingInvoiceStep.java:48"
+  "location": "VatidAndCompanyStep.java:28"
 });
 formatter.result({
-  "duration": 122289,
+  "duration": 117353824,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 26
+      "val": "56605473",
+      "offset": 25
     }
   ],
-  "location": "IssuingInvoiceStep.java:44"
+  "location": "VatidAndCompanyStep.java:33"
 });
 formatter.result({
-  "duration": 56487,
+  "duration": 139115,
   "status": "passed"
 });
 formatter.after({
-  "duration": 41765,
+  "duration": 47173,
   "status": "passed"
 });
 formatter.before({
-  "duration": 240972,
+  "duration": 824174,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 61,
-  "name": "A special case to issue an invoice by assigning 10$ to tax excluded prices first and tax included prices second",
+  "line": 35,
+  "name": "用公司名稱找統一編號",
   "description": "",
-  "id": "issuing-invoices-for-companies;a-special-case-to-issue-an-invoice-by-assigning-10$-to-tax-excluded-prices-first-and-tax-included-prices-second",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;5",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 62,
-  "name": "Ｔhe VAT rate is 0.05",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 63,
-  "name": "the tax excluded price provided is 10",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 64,
-  "name": "the tax included price provided is 10",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 65,
-  "name": "I issue a company invoice",
+  "line": 28,
+  "name": "I enter the company name \"千山室內設計有限公司\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 66,
-  "name": "I should see the VAT is 0",
+  "line": 29,
+  "name": "I should see the VAT ID \"60627506\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 67,
-  "name": "the tax included price is 10",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 68,
-  "name": "the tax excluded price is 10",
-  "keyword": "And "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0.05",
-      "offset": 16
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:18"
-});
-formatter.result({
-  "duration": 124392,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:28"
-});
-formatter.result({
-  "duration": 41164,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 35
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:24"
-});
-formatter.result({
-  "duration": 65802,
-  "status": "passed"
-});
-formatter.match({
-  "location": "IssuingInvoiceStep.java:36"
-});
-formatter.result({
-  "duration": 12920,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "IssuingInvoiceStep.java:40"
-});
-formatter.result({
-  "duration": 36056,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
+      "val": "千山室內設計有限公司",
       "offset": 26
     }
   ],
-  "location": "IssuingInvoiceStep.java:48"
+  "location": "VatidAndCompanyStep.java:28"
 });
 formatter.result({
-  "duration": 34854,
+  "duration": 108524682,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 26
+      "val": "60627506",
+      "offset": 25
     }
   ],
-  "location": "IssuingInvoiceStep.java:44"
+  "location": "VatidAndCompanyStep.java:33"
 });
 formatter.result({
-  "duration": 28845,
+  "duration": 145725,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13822,
+  "duration": 47774,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 768888,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 36,
+  "name": "用公司名稱找統一編號",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;6",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 28,
+  "name": "I enter the company name \"國立臺北科技大學\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 29,
+  "name": "I should see the VAT ID \"92021164\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "國立臺北科技大學",
+      "offset": 26
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:28"
+});
+formatter.result({
+  "duration": 102671338,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "92021164",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 148129,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 50778,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 530319,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 37,
+  "name": "用公司名稱找統一編號",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;7",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 28,
+  "name": "I enter the company name \"\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 29,
+  "name": "I should see the VAT ID \"請輸入公司名稱\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 26
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:28"
+});
+formatter.result({
+  "duration": 101256,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "請輸入公司名稱",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 87135,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 31548,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 563371,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 38,
+  "name": "用公司名稱找統一編號",
+  "description": "",
+  "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;8",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 28,
+  "name": "I enter the company name \"測試公司\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 29,
+  "name": "I should see the VAT ID \"查無此統編，請輸入正確公司名稱\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "測試公司",
+      "offset": 26
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:28"
+});
+formatter.result({
+  "duration": 85683990,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "查無此統編，請輸入正確公司名稱",
+      "offset": 25
+    }
+  ],
+  "location": "VatidAndCompanyStep.java:33"
+});
+formatter.result({
+  "duration": 146026,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 54684,
   "status": "passed"
 });
 });
