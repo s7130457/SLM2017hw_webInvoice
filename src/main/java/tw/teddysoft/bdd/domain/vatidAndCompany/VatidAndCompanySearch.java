@@ -19,6 +19,12 @@ public class VatidAndCompanySearch {
         if (vatid == "error" || vatid == "" ){
             return "請輸入統編";
         }
+
+        try {
+            int checkStringIsNumber = Integer.parseInt(vatid);
+        } catch (Exception e) {
+            return "請輸入正確統編";
+        }
         String url = "http://company.g0v.ronny.tw/api/show/" + vatid;
         String company = "";
         JSONObject json = null;
@@ -29,7 +35,7 @@ public class VatidAndCompanySearch {
             json = new JSONObject(jsonText);
 
             if( json.has("data") == false ){
-                company = "查無此公司，請輸入正確統編";
+                company = "請輸入正確統編";
                 return company;
             }
 
@@ -67,7 +73,7 @@ public class VatidAndCompanySearch {
             jsonArr = jsonOb.getJSONArray("data");
 
             if( jsonArr.isNull(0)){
-                vatid = "查無此統編，請輸入正確公司名稱";
+                vatid = "請輸入正確公司名稱";
                 return vatid;
             }
 

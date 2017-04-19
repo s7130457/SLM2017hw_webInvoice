@@ -26,13 +26,14 @@ public class VatidAndCompanySearchTest {
     @Test
     public void testGiveIllegalVatidSearcCompany() {
         assertEquals("請輸入統編",VatidAndCompanySearch.getCompany(""));
-        assertEquals("查無此公司，請輸入正確統編",VatidAndCompanySearch.getCompany("12584651"));
+        assertEquals("請輸入正確統編",VatidAndCompanySearch.getCompany("12584651"));
+        assertEquals("請輸入正確統編",VatidAndCompanySearch.getCompany("ggggfdg"));
     }
 
     @Test
     public void testGiveIllegalCompanySearcVatid() {
         assertEquals("請輸入公司名稱",VatidAndCompanySearch.getVatid(""));
-        assertEquals("查無此統編，請輸入正確公司名稱",VatidAndCompanySearch.getVatid("測試公司"));
+        assertEquals("請輸入正確公司名稱",VatidAndCompanySearch.getVatid("測試公司"));
     }
 
 }

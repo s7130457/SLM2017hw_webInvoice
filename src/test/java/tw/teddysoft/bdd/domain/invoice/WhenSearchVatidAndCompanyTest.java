@@ -59,18 +59,33 @@ public class WhenSearchVatidAndCompanyTest {
     }
 
     @Test
-    public void should_be_a_illegal_search_when_given_error_vatid_then_get_company() {
+    public void should_be_a_illegal_search_when_given_error_number_vatid_then_get_company() {
         VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
                 withVatID("12584651").search();
 
         // DEMO: use junit to perform assertion
         assertNotNull(vatidAndCompany);
-        assertEquals("查無此公司，請輸入正確統編", vatidAndCompany.getCompany());
+        assertEquals("請輸入正確統編", vatidAndCompany.getCompany());
         assertEquals("12584651", vatidAndCompany.getVatid());
 
         //  DEMO: use AssertJ to perform assertion
         assertThat(vatidAndCompany).isNotNull();
         assertThat(vatidAndCompany.getVatid()).isEqualTo("12584651");
+    }
+
+    @Test
+    public void should_be_a_illegal_search_when_given_error_not_number_vatid_then_get_company() {
+        VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
+                withVatID("fsfsd").search();
+
+        // DEMO: use junit to perform assertion
+        assertNotNull(vatidAndCompany);
+        assertEquals("請輸入正確統編", vatidAndCompany.getCompany());
+        assertEquals("fsfsd", vatidAndCompany.getVatid());
+
+        //  DEMO: use AssertJ to perform assertion
+        assertThat(vatidAndCompany).isNotNull();
+        assertThat(vatidAndCompany.getVatid()).isEqualTo("fsfsd");
     }
 
     @Test
@@ -80,7 +95,7 @@ public class WhenSearchVatidAndCompanyTest {
 
         // DEMO: use junit to perform assertion
         assertNotNull(vatidAndCompany);
-        assertEquals("查無此統編，請輸入正確公司名稱", vatidAndCompany.getVatid());
+        assertEquals("請輸入正確公司名稱", vatidAndCompany.getVatid());
         assertEquals("測試公司", vatidAndCompany.getCompany());
 
         // DEMO: use AssertJ to perform assertion

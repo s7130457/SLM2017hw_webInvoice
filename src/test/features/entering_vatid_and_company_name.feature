@@ -1,4 +1,4 @@
-Feature: Entering VAT ID and the company name
+﻿Feature: Entering VAT ID and the company name
   In order to avoid errors
   As a Teddysoft employee
   I want to make sure the VAT ID and company name are consistency
@@ -21,7 +21,8 @@ Feature: Entering VAT ID and the company name
       |  24628967  |    台北分公司                  | 分公司名稱  (大馨旅行社有限公司台北分公司)   |
       |  92021164  |    國立臺北科技大學            |                      名稱                    |
 #      |            |      請輸入統編                 |                  統編為空                   |
-      |  12584651  |  查無此公司，請輸入正確統編   |                  錯誤統編                   |
+      |  12584651  |  請輸入正確統編   		|                  錯誤統編                   |
+	|  fthrhr  |  請輸入正確統編   		|                  錯誤統編                   |
 
 
   Scenario Outline: 用公司名稱找統一編號
@@ -35,4 +36,4 @@ Feature: Entering VAT ID and the company name
       |  60627506                          |    千山室內設計有限公司   |                  公司名稱                   |
       |  92021164                          |    國立臺北科技大學       |                      名稱                    |
       |  請輸入公司名稱                   |                              |                  公司為空                  |
-      |  查無此統編，請輸入正確公司名稱  |       測試公司              |                  錯誤公司                  |
+      |  請輸入正確公司名稱  		|       測試公司              |                  錯誤公司                  |
