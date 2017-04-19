@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0616ad-f92b-4dd6-8eb6-c92a26acc15c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/DefaultVatidAndCompanyBuilder.class" afterPath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/DefaultVatidAndCompanyBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.class" afterPath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step/VatidAndCompanyStep.class" afterPath="$PROJECT_DIR$/target/test-classes/step/VatidAndCompanyStep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/support/DomainHelperForVatidAndCompany.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/support/DomainHelperForVatidAndCompany.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/DefaultVatidAndCompanyBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/DefaultVatidAndCompanyBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompany.java" afterPath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompany.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java" afterPath="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature" afterPath="$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step/VatidAndCompanyStep.java" afterPath="$PROJECT_DIR$/src/test/java/step/VatidAndCompanyStep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.java" afterPath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.java" afterPath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/support/DomainHelperForVatidAndCompany.java" afterPath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/support/DomainHelperForVatidAndCompany.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" afterPath="$PROJECT_DIR$/target/test-classes/cucumber.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,84 +18,58 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="WhenSearchVatidAndCompanyTest.java" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="421">
-                      <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="entering_vatid_and_company_name.feature" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="228">
-                      <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="issuing_company_invoice.feature" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-280">
-                      <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="cucumber.properties" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.properties">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="28">
-                      <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="issuing_company_invoice.feature" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="308">
-                      <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="DefaultInvoiceBuilder.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/invoice/DefaultInvoiceBuilder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WhenSearchVatidAndCompanyTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entering_vatid_and_company_name.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issuing_company_invoice.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-280">
+              <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cucumber.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,12 +128,12 @@
         <option value="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/DefaultVatidAndCompanyBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompany.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/step/VatidAndCompanyStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/support/DomainHelperForVatidAndCompany.java" />
         <option value="$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -185,9 +145,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="width" value="3842" />
-    <option name="height" value="1092" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -865,7 +826,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="0" width="3842" height="1092" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -874,10 +835,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31059062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28224102" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1108207" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1236,14 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1212">
@@ -1257,10 +1210,10 @@
         <state relative-caret-position="280">
           <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#683#684#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1268,7 +1221,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
-          <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -1276,7 +1229,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1285,6 +1238,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
         </state>
       </provider>
