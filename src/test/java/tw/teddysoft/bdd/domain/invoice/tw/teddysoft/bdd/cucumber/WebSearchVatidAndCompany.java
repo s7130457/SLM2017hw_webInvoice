@@ -5,14 +5,14 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 /**
- * Created by teddy on 2017/2/21.
+ * Created by teddy on 2017/4/19.
  */
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/features/issuing_company_invoice.feature",
+        features = "src/test/features/entering_vatid_and_company_name.feature",
         glue = {"step"},
         format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"}
 )
-public class IssuingInvoiceCucumberTest {
+public class WebSearchVatidAndCompany {
 }
