@@ -29,6 +29,21 @@ public class WhenSearchVatidAndCompanyTest {
     }
 
     @Test
+    public void should_be_a_regular_search_when_given_company_then_get_vatid() {
+        VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
+                withCompany("泰迪軟體科技有限公司").search();
+
+        // DEMO: use junit to perform assertion
+        assertNotNull(vatidAndCompany);
+        assertEquals("53909614", vatidAndCompany.getVatid());
+        assertEquals("泰迪軟體科技有限公司", vatidAndCompany.getCompany());
+
+        // DEMO: use AssertJ to perform assertion
+        assertThat(vatidAndCompany).isNotNull();
+        assertThat(vatidAndCompany.getCompany()).isEqualTo("泰迪軟體科技有限公司");
+    }
+
+    @Test
     public void should_be_a_illegal_search_when_given_null_vatid_then_get_company() {
         VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
                 withVatID("").search();
