@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0616ad-f92b-4dd6-8eb6-c92a26acc15c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.class" afterPath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/VatidAndCompanySearchTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/WhenSearchVatidAndCompanyTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SLM2017.iml" afterPath="$PROJECT_DIR$/SLM2017.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" afterPath="$PROJECT_DIR$/target/test-classes/cucumber.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +28,7 @@
       <file leaf-file-name="WebSearchVatidAndCompany.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebSearchVatidAndCompany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="336">
               <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,7 +40,7 @@
       <file leaf-file-name="entering_vatid_and_company_name.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="308">
               <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
@@ -63,7 +70,7 @@
       <file leaf-file-name="IssuingInvoiceCucumberTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/IssuingInvoiceCucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="336">
               <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
-              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,7 +102,7 @@
       <file leaf-file-name="VatidAndCompanyStep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/step/VatidAndCompanyStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state relative-caret-position="560">
               <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
@@ -115,7 +122,7 @@
       <file leaf-file-name="VatidAndCompanySearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
+            <state relative-caret-position="196">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
@@ -200,10 +207,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -220,6 +227,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -520,9 +530,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -542,33 +549,7 @@
       <recent name="step" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebSearchVatidAndCompany">
-    <configuration default="false" name="WhenSearchVatidAndCompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tw.teddysoft.bdd.domain.invoice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SLM2017" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tw.teddysoft.bdd.domain.invoice" />
-      <option name="MAIN_CLASS_NAME" value="tw.teddysoft.bdd.domain.invoice.WhenSearchVatidAndCompanyTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.WhenSearchVatidAndCompanyTest">
     <configuration default="false" name="Feature: entering_vatid_and_company_name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -583,30 +564,6 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SLM2017" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: Entering VAT ID is null gets the corresponding company name is &quot;請輸入統編&quot;" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature" />
-      <option name="GLUE" value="step" />
-      <option name="myNameFilter" value="^Entering VAT ID is null gets the corresponding company name is \&quot;請輸入統編\&quot;$" />
-      <option name="myGeneratedName" value="Scenario: Entering VAT ID is null gets the corresponding company name is &quot;請輸入統編&quot;" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Entering VAT ID is null gets the corresponding company name is \&quot;請輸入統編\&quot;$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -655,6 +612,58 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tw.teddysoft.bdd.domain.invoice.tw.teddysoft.bdd.cucumber" />
       <option name="MAIN_CLASS_NAME" value="tw.teddysoft.bdd.domain.invoice.tw.teddysoft.bdd.cucumber.WebSearchVatidAndCompany" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="VatidAndCompanySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tw.teddysoft.bdd.domain.invoice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SLM2017" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tw.teddysoft.bdd.domain.invoice" />
+      <option name="MAIN_CLASS_NAME" value="tw.teddysoft.bdd.domain.invoice.VatidAndCompanySearchTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WhenSearchVatidAndCompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tw.teddysoft.bdd.domain.invoice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SLM2017" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tw.teddysoft.bdd.domain.invoice" />
+      <option name="MAIN_CLASS_NAME" value="tw.teddysoft.bdd.domain.invoice.WhenSearchVatidAndCompanyTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -838,19 +847,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WhenSearchVatidAndCompanyTest" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Entering VAT ID is null gets the corresponding company name is &quot;請輸入統編&quot;" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IssuingInvoiceCucumberTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WebSearchVatidAndCompany" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IssuingInvoiceCucumberTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WebSearchVatidAndCompany" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VatidAndCompanySearchTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.WhenSearchVatidAndCompanyTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WebSearchVatidAndCompany" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.IssuingInvoiceCucumberTest" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Entering VAT ID is null gets the corresponding company name is &quot;請輸入統編&quot;" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WhenSearchVatidAndCompanyTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.WhenSearchVatidAndCompanyTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VatidAndCompanySearchTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WebSearchVatidAndCompany" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.IssuingInvoiceCucumberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -868,12 +877,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__entering_vatid_and_company_name - 2017.04.19 at 23h 31m 46s.xml">
-      <configuration name="Feature: entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__entering_vatid_and_company_name - 2017.04.19 at 23h 32m 46s.xml">
-      <configuration name="Feature: entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__entering_vatid_and_company_name - 2017.04.19 at 23h 34m 09s.xml">
       <configuration name="Feature: entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -889,6 +892,9 @@
     <history-entry file="VatidAndCompanySearchTest - 2017.04.19 at 23h 31m 34s.xml">
       <configuration name="VatidAndCompanySearchTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VatidAndCompanySearchTest - 2017.04.25 at 18h 00m 24s.xml">
+      <configuration name="VatidAndCompanySearchTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="WebSearchVatidAndCompany - 2017.04.19 at 23h 34m 27s.xml">
       <configuration name="WebSearchVatidAndCompany" configurationId="JUnit" />
     </history-entry>
@@ -898,10 +904,13 @@
     <history-entry file="WhenSearchVatidAndCompanyTest - 2017.04.19 at 23h 31m 38s.xml">
       <configuration name="WhenSearchVatidAndCompanyTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WhenSearchVatidAndCompanyTest - 2017.04.25 at 18h 00m 41s.xml">
+      <configuration name="WhenSearchVatidAndCompanyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21564482" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -909,7 +918,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25963488" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2589852" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1245,7 +1254,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/vatidAndCompany/VatidAndCompanySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
+        <state relative-caret-position="196">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -1253,7 +1262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebSearchVatidAndCompany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="336">
           <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1263,7 +1272,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/IssuingInvoiceCucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="336">
           <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1274,7 +1283,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1289,7 +1298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step/VatidAndCompanyStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="560">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
@@ -1297,7 +1306,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="308">
           <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
