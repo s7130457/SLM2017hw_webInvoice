@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 463917,
+              "duration": 74639226,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 25840,
+              "duration": 51980,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 201040929,
+              "duration": 4865365276,
               "status": "passed"
             },
             "line": 7,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 5606362,
+              "duration": 6055857,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +74,7 @@
         "before": [
           {
             "result": {
-              "duration": 375880,
+              "duration": 850614,
               "status": "passed"
             },
             "match": {
@@ -89,7 +89,7 @@
         "after": [
           {
             "result": {
-              "duration": 48675,
+              "duration": 33352,
               "status": "passed"
             },
             "match": {
@@ -102,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 133265208,
+              "duration": 3777590055,
               "status": "passed"
             },
             "line": 11,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 178776,
+              "duration": 101857,
               "status": "passed"
             },
             "line": 12,
@@ -142,7 +142,7 @@
         "before": [
           {
             "result": {
-              "duration": 810953,
+              "duration": 500874,
               "status": "passed"
             },
             "match": {
@@ -157,7 +157,7 @@
         "after": [
           {
             "result": {
-              "duration": 64599,
+              "duration": 24938,
               "status": "passed"
             },
             "match": {
@@ -170,7 +170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 86372054,
+              "duration": 3672136118,
               "status": "passed"
             },
             "line": 15,
@@ -191,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 134007,
+              "duration": 50779,
               "status": "passed"
             },
             "line": 16,
@@ -216,7 +216,7 @@
         "before": [
           {
             "result": {
-              "duration": 652608,
+              "duration": 800136,
               "status": "passed"
             },
             "match": {
@@ -231,7 +231,7 @@
         "after": [
           {
             "result": {
-              "duration": 44168,
+              "duration": 22535,
               "status": "passed"
             },
             "match": {
@@ -244,7 +244,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1122458711,
+              "duration": 3639737658,
               "status": "passed"
             },
             "line": 15,
@@ -265,7 +265,7 @@
           },
           {
             "result": {
-              "duration": 104562,
+              "duration": 87736,
               "status": "passed"
             },
             "line": 16,
@@ -290,7 +290,7 @@
         "before": [
           {
             "result": {
-              "duration": 572385,
+              "duration": 679951,
               "status": "passed"
             },
             "match": {
@@ -305,7 +305,7 @@
         "after": [
           {
             "result": {
-              "duration": 52882,
+              "duration": 47173,
               "status": "passed"
             },
             "match": {
@@ -318,7 +318,7 @@
         "steps": [
           {
             "result": {
-              "duration": 91726627,
+              "duration": 3663989630,
               "status": "passed"
             },
             "line": 15,
@@ -339,7 +339,7 @@
           },
           {
             "result": {
-              "duration": 140617,
+              "duration": 126496,
               "status": "passed"
             },
             "line": 16,
@@ -364,7 +364,7 @@
         "before": [
           {
             "result": {
-              "duration": 763780,
+              "duration": 645397,
               "status": "passed"
             },
             "match": {
@@ -379,7 +379,7 @@
         "after": [
           {
             "result": {
-              "duration": 51380,
+              "duration": 15624,
               "status": "passed"
             },
             "match": {
@@ -392,7 +392,7 @@
         "steps": [
           {
             "result": {
-              "duration": 85275058,
+              "duration": 3655072152,
               "status": "passed"
             },
             "line": 15,
@@ -413,7 +413,7 @@
           },
           {
             "result": {
-              "duration": 149030,
+              "duration": 46873,
               "status": "passed"
             },
             "line": 16,
@@ -444,7 +444,7 @@
         "before": [
           {
             "result": {
-              "duration": 541136,
+              "duration": 1083174,
               "status": "passed"
             },
             "match": {
@@ -459,7 +459,7 @@
         "after": [
           {
             "result": {
-              "duration": 34253,
+              "duration": 37558,
               "status": "passed"
             },
             "match": {
@@ -472,7 +472,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80999753,
+              "duration": 3552615045,
               "status": "passed"
             },
             "line": 15,
@@ -493,15 +493,15 @@
           },
           {
             "result": {
-              "duration": 142120,
+              "duration": 84430,
               "status": "passed"
             },
             "line": 16,
-            "name": "I should see the company name \"查無此公司，請輸入正確統編\"",
+            "name": "I should see the company name \"請輸入正確統編\"",
             "match": {
               "arguments": [
                 {
-                  "val": "查無此公司，請輸入正確統編",
+                  "val": "請輸入正確統編",
                   "offset": 31
                 }
               ],
@@ -518,7 +518,7 @@
         "before": [
           {
             "result": {
-              "duration": 855422,
+              "duration": 3738977,
               "status": "passed"
             },
             "match": {
@@ -526,14 +526,14 @@
             }
           }
         ],
-        "line": 32,
-        "name": "用公司名稱找統一編號",
+        "line": 25,
+        "name": "用統一編號找公司名稱",
         "description": "",
-        "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;2",
+        "id": "entering-vat-id-and-the-company-name;用統一編號找公司名稱;;7",
         "after": [
           {
             "result": {
-              "duration": 29445,
+              "duration": 21333,
               "status": "passed"
             },
             "match": {
@@ -546,10 +546,84 @@
         "steps": [
           {
             "result": {
-              "duration": 851914092,
+              "duration": 3654895178,
               "status": "passed"
             },
-            "line": 28,
+            "line": 15,
+            "name": "I enter the VAT ID \"fthrhr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fthrhr",
+                  "offset": 20
+                }
+              ],
+              "location": "VatidAndCompanyStep.java:19"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45971,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the company name \"請輸入正確統編\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "請輸入正確統編",
+                  "offset": 31
+                }
+              ],
+              "location": "VatidAndCompanyStep.java:24"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 974406,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "用公司名稱找統一編號",
+        "description": "",
+        "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 13220,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3650117797,
+              "status": "passed"
+            },
+            "line": 29,
             "name": "I enter the company name \"東發視聽社\"",
             "match": {
               "arguments": [
@@ -567,10 +641,10 @@
           },
           {
             "result": {
-              "duration": 65502,
+              "duration": 40262,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"09430924\"",
             "match": {
               "arguments": [
@@ -592,7 +666,7 @@
         "before": [
           {
             "result": {
-              "duration": 353947,
+              "duration": 637886,
               "status": "passed"
             },
             "match": {
@@ -600,14 +674,14 @@
             }
           }
         ],
-        "line": 33,
+        "line": 34,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;3",
         "after": [
           {
             "result": {
-              "duration": 47774,
+              "duration": 14722,
               "status": "passed"
             },
             "match": {
@@ -620,10 +694,10 @@
         "steps": [
           {
             "result": {
-              "duration": 102132906,
+              "duration": 3665112465,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"鴻海當舖\"",
             "match": {
               "arguments": [
@@ -641,10 +715,10 @@
           },
           {
             "result": {
-              "duration": 134308,
+              "duration": 43267,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"04374276\"",
             "match": {
               "arguments": [
@@ -666,7 +740,7 @@
         "before": [
           {
             "result": {
-              "duration": 758972,
+              "duration": 616853,
               "status": "passed"
             },
             "match": {
@@ -674,14 +748,14 @@
             }
           }
         ],
-        "line": 34,
+        "line": 35,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;4",
         "after": [
           {
             "result": {
-              "duration": 47173,
+              "duration": 12920,
               "status": "passed"
             },
             "match": {
@@ -694,10 +768,10 @@
         "steps": [
           {
             "result": {
-              "duration": 117353824,
+              "duration": 3594009704,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"資展百貨有限公司\"",
             "match": {
               "arguments": [
@@ -715,10 +789,10 @@
           },
           {
             "result": {
-              "duration": 139115,
+              "duration": 86534,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"56605473\"",
             "match": {
               "arguments": [
@@ -740,7 +814,7 @@
         "before": [
           {
             "result": {
-              "duration": 824174,
+              "duration": 543240,
               "status": "passed"
             },
             "match": {
@@ -748,14 +822,14 @@
             }
           }
         ],
-        "line": 35,
+        "line": 36,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;5",
         "after": [
           {
             "result": {
-              "duration": 47774,
+              "duration": 14121,
               "status": "passed"
             },
             "match": {
@@ -768,10 +842,10 @@
         "steps": [
           {
             "result": {
-              "duration": 108524682,
+              "duration": 3594141308,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"千山室內設計有限公司\"",
             "match": {
               "arguments": [
@@ -789,10 +863,10 @@
           },
           {
             "result": {
-              "duration": 145725,
+              "duration": 54384,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"60627506\"",
             "match": {
               "arguments": [
@@ -814,7 +888,7 @@
         "before": [
           {
             "result": {
-              "duration": 768888,
+              "duration": 668232,
               "status": "passed"
             },
             "match": {
@@ -822,14 +896,14 @@
             }
           }
         ],
-        "line": 36,
+        "line": 37,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;6",
         "after": [
           {
             "result": {
-              "duration": 50778,
+              "duration": 12620,
               "status": "passed"
             },
             "match": {
@@ -842,10 +916,10 @@
         "steps": [
           {
             "result": {
-              "duration": 102671338,
+              "duration": 3666717846,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"國立臺北科技大學\"",
             "match": {
               "arguments": [
@@ -863,10 +937,10 @@
           },
           {
             "result": {
-              "duration": 148129,
+              "duration": 35755,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"92021164\"",
             "match": {
               "arguments": [
@@ -888,7 +962,7 @@
         "before": [
           {
             "result": {
-              "duration": 530319,
+              "duration": 1032094,
               "status": "passed"
             },
             "match": {
@@ -896,14 +970,14 @@
             }
           }
         ],
-        "line": 37,
+        "line": 38,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;7",
         "after": [
           {
             "result": {
-              "duration": 31548,
+              "duration": 29445,
               "status": "passed"
             },
             "match": {
@@ -916,10 +990,10 @@
         "steps": [
           {
             "result": {
-              "duration": 101256,
+              "duration": 3291757995,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"\"",
             "match": {
               "arguments": [
@@ -937,10 +1011,10 @@
           },
           {
             "result": {
-              "duration": 87135,
+              "duration": 83529,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "I should see the VAT ID \"請輸入公司名稱\"",
             "match": {
               "arguments": [
@@ -962,7 +1036,7 @@
         "before": [
           {
             "result": {
-              "duration": 563371,
+              "duration": 1291095,
               "status": "passed"
             },
             "match": {
@@ -970,14 +1044,14 @@
             }
           }
         ],
-        "line": 38,
+        "line": 39,
         "name": "用公司名稱找統一編號",
         "description": "",
         "id": "entering-vat-id-and-the-company-name;用公司名稱找統一編號;;8",
         "after": [
           {
             "result": {
-              "duration": 54684,
+              "duration": 49276,
               "status": "passed"
             },
             "match": {
@@ -990,10 +1064,10 @@
         "steps": [
           {
             "result": {
-              "duration": 85683990,
+              "duration": 3470178774,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "I enter the company name \"測試公司\"",
             "match": {
               "arguments": [
@@ -1011,15 +1085,15 @@
           },
           {
             "result": {
-              "duration": 146026,
+              "duration": 63398,
               "status": "passed"
             },
-            "line": 29,
-            "name": "I should see the VAT ID \"查無此統編，請輸入正確公司名稱\"",
+            "line": 30,
+            "name": "I should see the VAT ID \"請輸入正確公司名稱\"",
             "match": {
               "arguments": [
                 {
-                  "val": "查無此統編，請輸入正確公司名稱",
+                  "val": "請輸入正確公司名稱",
                   "offset": 25
                 }
               ],
