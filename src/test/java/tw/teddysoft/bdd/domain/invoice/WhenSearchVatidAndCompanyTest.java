@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 public class WhenSearchVatidAndCompanyTest {
 
     @Test
-    public void should_be_a_regular_search_when_given_vatid_then_get_company() {
+    public void should_be_a_regular_search_when_given_vatid_then_get_companyName() {
         VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
                 withVatID("53909614").search();
 
@@ -26,21 +26,6 @@ public class WhenSearchVatidAndCompanyTest {
         // DEMO: use AssertJ to perform assertion
         assertThat(vatidAndCompany).isNotNull();
         assertThat(vatidAndCompany.getVatid()).isEqualTo("53909614");
-    }
-
-    @Test
-    public void should_be_a_regular_search_when_given_company_then_get_vatid() {
-        VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
-                withCompany("泰迪軟體科技有限公司").search();
-
-        // DEMO: use junit to perform assertion
-        assertNotNull(vatidAndCompany);
-        assertEquals("53909614", vatidAndCompany.getVatid());
-        assertEquals("泰迪軟體科技有限公司", vatidAndCompany.getCompany());
-
-        // DEMO: use AssertJ to perform assertion
-        assertThat(vatidAndCompany).isNotNull();
-        assertThat(vatidAndCompany.getCompany()).isEqualTo("泰迪軟體科技有限公司");
     }
 
     @Test
@@ -74,7 +59,7 @@ public class WhenSearchVatidAndCompanyTest {
     }
 
     @Test
-    public void should_be_a_illegal_search_when_given_error_number_vatid_then_get_company() {
+    public void should_be_a_illegal_search_when_given_errorNumber_vatid_then_get_company() {
         VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
                 withVatID("12584651").search();
 
@@ -89,18 +74,18 @@ public class WhenSearchVatidAndCompanyTest {
     }
 
     @Test
-    public void should_be_a_illegal_search_when_given_error_not_number_vatid_then_get_company() {
+    public void should_be_a_illegal_search_when_given_errorNotNumber_vatid_then_get_company() {
         VatidAndCompany vatidAndCompany = DefaultVatidAndCompanyBuilder.newInstance().
-                withVatID("fsfsd").search();
+                withVatID("ddddd").search();
 
         // DEMO: use junit to perform assertion
         assertNotNull(vatidAndCompany);
         assertEquals("請輸入正確統編", vatidAndCompany.getCompany());
-        assertEquals("fsfsd", vatidAndCompany.getVatid());
+        assertEquals("ddddd", vatidAndCompany.getVatid());
 
         //  DEMO: use AssertJ to perform assertion
         assertThat(vatidAndCompany).isNotNull();
-        assertThat(vatidAndCompany.getVatid()).isEqualTo("fsfsd");
+        assertThat(vatidAndCompany.getVatid()).isEqualTo("ddddd");
     }
 
     @Test
