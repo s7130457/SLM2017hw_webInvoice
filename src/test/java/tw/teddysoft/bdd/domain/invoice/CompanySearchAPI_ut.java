@@ -1,5 +1,6 @@
 package tw.teddysoft.bdd.domain.invoice;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import tw.teddysoft.bdd.domain.company.CompanySearch;
 
@@ -50,15 +51,15 @@ public class CompanySearchAPI_ut {
         assertEquals("33061127", CompanySearch.getVatid("台北分公司"));
     }
 
-//    @Test
-//    public void given_branch_company_vatid_search_complete_branch_company_name() {
-//        assertEquals("大馨旅行社有限公司台北分公司",CompanySearch.getCompany("24628967"));
-//    }
+    @Ignore@Test
+    public void given_branch_company_vatid_search_complete_branch_company_name() {
+        assertEquals("大馨旅行社有限公司台北分公司",CompanySearch.getCompany("24628967"));
+    }
 
-//    @Test
-//    public void given_branch_company_name_search_vatid_and_return_search_many_company_data() {
-//        assertEquals("查詢到多筆資料",CompanySearch.getVatid("台北分公司"));
-//    }
+    @Ignore@Test
+    public void given_branch_company_name_search_vatid_and_return_search_many_company_data() {
+        assertEquals("查詢到多筆資料",CompanySearch.getVatid("台北分公司"));
+    }
 
     @Test
     public void when_input_empty_string_vatid_then_companyName_output_is_please_input_vatid() {

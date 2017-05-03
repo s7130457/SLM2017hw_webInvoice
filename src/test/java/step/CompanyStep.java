@@ -25,8 +25,8 @@ public class CompanyStep implements En {
             assertThat(helper.getCompany().getCompany(), is(company));
         });
 
-        When("^I enter the company name \"([^\"]*)\"$", (String company) -> {
-            helper.getCompanyBuilder().giveCompanyName(company);
+        When("^I enter the company name \"([^\"]*)\"$", (String companyName) -> {
+            helper.getCompanyBuilder().giveCompanyName(companyName);
             helper.setCompany(helper.getCompanyBuilder().search());
         });
 

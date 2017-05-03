@@ -74,6 +74,7 @@ public final class InvoiceWeb {
             Company company;
             String vatid = request.queryMap("vatid").value();
             String companyName = request.queryMap("companyName").value();
+            System.out.print("companyName="+companyName);
             if(isUseVatidToFindCompany(vatid)) {
                 company = CompanyBuilder.newInstance().
                         giveVatID(vatid).search();
@@ -91,7 +92,7 @@ public final class InvoiceWeb {
 
 
     private static boolean isUseVatidToFindCompany(String vatid) {
-        if ((null == vatid) || ("".equals(vatid))) { //use Company name find Vatid
+        if ( ("".equals(vatid) ) || (null == vatid) ) { //use Company name find Vatid
             return  false;
         }
         return true;

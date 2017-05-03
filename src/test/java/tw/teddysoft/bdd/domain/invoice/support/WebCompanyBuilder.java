@@ -31,7 +31,7 @@ public class WebCompanyBuilder implements CompanyBuilder {
 
     @Override
     public CompanyBuilder giveCompanyName(String companyName) {
-        getWebDriver().findElement(By.name("company")).sendKeys(String.valueOf(companyName));
+        getWebDriver().findElement(By.name("companyName")).sendKeys(String.valueOf(companyName));
         return this;
     }
 
@@ -40,8 +40,8 @@ public class WebCompanyBuilder implements CompanyBuilder {
         try {
             getWebDriver().findElement(By.name("search")).click();
             String vatid = getWebDriver().findElement(By.name("vatid")).getAttribute("value");
-            String company = getWebDriver().findElement(By.name("company")).getAttribute("value");
-            return new Company(vatid,company);
+            String companyName = getWebDriver().findElement(By.name("companyName")).getAttribute("value");
+            return new Company(vatid,companyName);
         }
         finally {
             getWebDriver().quit();
