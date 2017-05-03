@@ -2,7 +2,7 @@ package tw.teddysoft.bdd.domain.invoice.support;
 
 import cucumber.runtime.java.picocontainer.PicoFactory;
 import tw.teddysoft.bdd.domain.invoice.DefaultInvoiceBuilder;
-import tw.teddysoft.bdd.domain.vatidAndCompany.DefaultVatidAndCompanyBuilder;
+import tw.teddysoft.bdd.domain.company.DefaultCompanyBuilder;
 
 import java.util.Properties;
 
@@ -20,9 +20,9 @@ public class CustomPicoFactory extends PicoFactory  {
         }
 
         if(Utility.isUnderVatidAndCompanyWebMode()) {
-            addClass(WebVatidAndCompanyBuilder.class);
+            addClass(WebCompanyBuilder.class);
         } else {
-            addClass(DefaultVatidAndCompanyBuilder.class);
+            addClass(DefaultCompanyBuilder.class);
         }
     }
 }

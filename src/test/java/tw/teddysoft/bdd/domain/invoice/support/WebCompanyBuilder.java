@@ -3,16 +3,16 @@ package tw.teddysoft.bdd.domain.invoice.support;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompany;
-import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompanyBuilder;
+import tw.teddysoft.bdd.domain.company.Company;
+import tw.teddysoft.bdd.domain.company.CompanyBuilder;
 
 /**
  * Created by jeni on 2017/4/16.
  */
-public class WebVatidAndCompanyBuilder implements VatidAndCompanyBuilder {
+public class WebCompanyBuilder implements CompanyBuilder {
     private WebDriver driver = null;
 
-    public WebVatidAndCompanyBuilder() {}
+    public WebCompanyBuilder() {}
 
     private WebDriver getWebDriver(){
         if (null == driver){
@@ -24,24 +24,24 @@ public class WebVatidAndCompanyBuilder implements VatidAndCompanyBuilder {
     }
 
     @Override
-    public VatidAndCompanyBuilder withVatID(String vatID) {
+    public CompanyBuilder giveVatID(String vatID) {
         getWebDriver().findElement(By.name("vatid")).sendKeys(String.valueOf(vatID));
         return this;
     }
 
     @Override
-    public VatidAndCompanyBuilder withCompany(String companyName) {
+    public CompanyBuilder giveCompanyName(String companyName) {
         getWebDriver().findElement(By.name("company")).sendKeys(String.valueOf(companyName));
         return this;
     }
 
     @Override
-    public VatidAndCompany search() {
+    public Company search() {
         try {
             getWebDriver().findElement(By.name("search")).click();
             String vatid = getWebDriver().findElement(By.name("vatid")).getAttribute("value");
             String company = getWebDriver().findElement(By.name("company")).getAttribute("value");
-            return new VatidAndCompany(vatid,company);
+            return new Company(vatid,company);
         }
         finally {
             getWebDriver().quit();

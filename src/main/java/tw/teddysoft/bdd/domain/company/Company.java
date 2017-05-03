@@ -1,13 +1,13 @@
-package tw.teddysoft.bdd.domain.vatidAndCompany;
+package tw.teddysoft.bdd.domain.company;
 
 /**
  * Created by jeni on 2017/4/13.
  */
-public class VatidAndCompany {
+public class Company {
     private final String vatid;
     private final String company;
 
-    public VatidAndCompany(String vatid, String company) {
+    public Company(String vatid, String company) {
         this.vatid = vatid;
         this.company = company;
     }

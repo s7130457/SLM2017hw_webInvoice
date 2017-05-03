@@ -15,6 +15,6 @@ function clearVatid() {
 }
 
 function clearCompany() {
-    var x = document.getElementById("company");
+    var x = document.getElementById("companyName");
     x.value = ""
 }

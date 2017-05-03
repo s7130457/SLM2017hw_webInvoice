@@ -24,7 +24,7 @@ public class Utility {
 
     public static boolean isUnderVatidAndCompanyWebMode(){
         Properties prop = Utility.loadProperties(Utility.CUCUMBER_PROPERTY_FILE);
-        if("webForVatidAndCompany".equals(prop.getProperty("VatidAndCompany.ui"))) {
+        if("webForCompany".equals(prop.getProperty("Company.ui"))) {
             return true;
         }
         else {

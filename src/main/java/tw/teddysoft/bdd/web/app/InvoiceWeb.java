@@ -4,8 +4,8 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
 import tw.teddysoft.bdd.domain.invoice.InvoiceBuilder;
-import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompany;
-import tw.teddysoft.bdd.domain.vatidAndCompany.VatidAndCompanyBuilder;
+import tw.teddysoft.bdd.domain.company.Company;
+import tw.teddysoft.bdd.domain.company.CompanyBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -71,19 +71,19 @@ public final class InvoiceWeb {
 
 
         post("/search", (request, response) -> {
-            VatidAndCompany vatidAndCompany;
+            Company company;
             String vatid = request.queryMap("vatid").value();
-            String company = request.queryMap("company").value();
+            String companyName = request.queryMap("companyName").value();
             if(isUseVatidToFindCompany(vatid)) {
-                vatidAndCompany = VatidAndCompanyBuilder.newInstance().
-                        withVatID(vatid).search();
+                company = CompanyBuilder.newInstance().
+                        giveVatID(vatid).search();
             }
             else {
-                vatidAndCompany = VatidAndCompanyBuilder.newInstance().
-                        withCompany(company).search();
+                company = CompanyBuilder.newInstance().
+                        giveCompanyName(companyName).search();
             }
             Map<String, Object> model = new HashMap<>();
-            model.put("vatidAndCompany", vatidAndCompany);
+            model.put("company", company);
             return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
         }, new VelocityTemplateEngine());
 
