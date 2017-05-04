@@ -2,7 +2,9 @@ package tw.teddysoft.bdd.domain.invoice;
 
 import org.junit.Ignore;
 import org.junit.Test;
+import tw.teddysoft.bdd.domain.company.Company;
 import tw.teddysoft.bdd.domain.company.CompanySearch;
+import tw.teddysoft.bdd.domain.company.DefaultCompanyBuilder;
 
 import static org.junit.Assert.assertEquals;
 
